@@ -47,6 +47,14 @@ for readme in ("README.md", "README.en.md"):
     if f"**{rule_count}**" not in (ROOT / readme).read_text(encoding="utf-8"):
         errors.append(f"{readme}: rule count **{rule_count}** not found")
 
+examples = (SKILL_DIR / "references" / "examples.md").read_text(encoding="utf-8")
+jargon = re.compile(r"【|\||风险等级|风险[：:]|\bA\d+\.\d+|RACI|PIP|KPI|Risk level", re.I)
+for lineno, line in enumerate(examples.splitlines(), 1):
+    if line.startswith(("> 编写备注", "> Author's note", "#")):
+        continue
+    if hit := jargon.search(line):
+        errors.append(f"examples.md:{lineno}: user-facing answer contains {hit.group(0)!r}; write it as plain prose")
+
 if errors:
     print("\n".join(f"✘ {e}" for e in errors))
     sys.exit(1)
