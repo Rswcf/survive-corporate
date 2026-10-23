@@ -1,0 +1,40 @@
+name: 提交职场情形
+description: 描述一个职场政治情形，讨论如何用 SurviveCorporate 分析（合法范围内）
+title: "[情形] "
+labels: ["scenario"]
+body:
+  - type: textarea
+    id: situation
+    attributes:
+      label: 情形描述
+      description: 匿名化。谁、做了什么、你的位置、你想达成什么。
+      placeholder: 例：周会上同事把我的方案当成他的成果汇报……
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 情形类型
+      options:
+        - 抢功
+        - 甩锅
+        - 被架空
+        - 集体投诉
+        - 空降领导
+        - 下属不服
+        - 向上管理
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 约束
+      description: 公司红线、国家/地区劳动法、你绝不能做的事
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 范围确认
+      options:
+        - label: 我理解本项目只讨论合法强硬策略，不寻求诬告、伪造证据、骚扰或侵犯隐私的方法
+          required: true
