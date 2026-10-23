@@ -5,7 +5,7 @@
 **Two thousand years of statecraft, packed into your AI assistant.**
 
 A coworker takes credit for your work. You get blamed for a slipped deadline. Your reports get quietly moved to someone else. Ask a generic AI and you mostly hear "communicate openly and stay positive."  
-SurviveCorporate makes it weigh interests the way Han Feizi would, then return **hard but legal** upper / middle / lower strategies, each with a classical source and a risk rating.
+SurviveCorporate turns it into a seasoned mentor who has read Han Feizi: it weighs whose interests are at stake, then calmly walks you through **hard but legal** options, telling you which classic each one comes from and where it could backfire.
 
 [![GitHub stars](https://img.shields.io/github/stars/Rswcf/survive-corporate?style=social)](https://github.com/Rswcf/survive-corporate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
@@ -37,24 +37,21 @@ SurviveCorporate makes it weigh interests the way Han Feizi would, then return *
 
 **You**: In the weekly meeting, coworker A presented my proposal as his own.
 
-**SurviveCorporate** (illustrative output adapted from example 1 in [`references/examples.md`](./skills/survivecorporate/references/examples.md); real answers vary by model and context):
+**SurviveCorporate** (excerpt from the English example in [`references/examples.md`](./skills/survivecorporate/references/examples.md); real answers vary by model and context):
 
-```text
-Situation        A is seizing the power to evaluate (the "reward" handle of Han Feizi's two handles).
-                 Your weak point: no written trail.
-Opponent's play  Stealing the two handles + withholding information
-Risk assessment  Calling A out publicly: medium exposure, makes a permanent enemy.
-                 Written follow-up: low exposure.
-Upper strategy   Same-day email to stakeholders with V1–V3 and the data: "I'll walk through
-                 rollout next week." | Risk: low | Mitigation: state facts, never write "A stole it"
-Middle strategy  At the next meeting: "I ran the numbers — two additions." | Risk: medium
-Lower strategy   Agree on attribution rules with A privately | Risk: medium (promises are cheap)
-Three moves today 1. Build a timeline  2. Send the cc email  3. Line up a cross-team witness for next review
-Sources          Han Feizi, "The Two Handles": 二柄者，刑德也 ("the two handles are punishment and reward")
-Blowback         Han Feizi understood persuasion and still died framed. Humiliating A = a lifelong enemy.
-```
+> I've seen this one many times. Before you say anything in the team chat, take a breath.
+>
+> What he's really taking isn't just this proposal; it's the right to say whose work it was. Han Feizi opens his chapter "The Two Handles" with 二柄者，刑德也 — "the two handles are punishment and reward." Whoever controls how work gets judged is holding one of those handles. You're exposed right now not because you can't speak up, but because there's no written trail.
+>
+> The safest move is to create that trail today. Send a short follow-up to everyone who was in the meeting and to your manager: "Following up on the proposal we discussed — I've attached versions 1 through 3 and the numbers behind them. Happy to walk through the rollout next week." State facts and leave his name out entirely. There's almost no risk here; it just looks thorough.
+>
+> If he keeps presenting it, you can add calmly at the next meeting, "I ran those numbers — let me add two points." That's a little riskier because it's face to face; if your tone slips, it sounds like you're grabbing the mic. …
+>
+> Three things to do today: write down the timeline from the first draft to now, send that follow-up email, and ask a colleague from another team who has seen your work to attend the next review.
+>
+> One last thing: don't call him out in public. You'd win one meeting and gain someone who remembers it for years. Han Feizi understood the dangers of speaking up better than anyone, and he still died after his former classmate Li Si framed him.
 
-Another common case: **three similar complaints in one week** → flagged as a *luozhi* (coordinated frame-up) pattern → ask for separate interviews and get a timeline plus original records to the decision-maker first. No counter-accusations, no digging into complainants' private lives.
+No tables, no scores. It talks you through the situation the way a well-read senior colleague would: what's really going on, three ways forward, where each one can go wrong, and what to do today. Another common case is **three similar complaints in one week**. It will point out that this resembles the *luozhi* frame-ups of Tang-dynasty secret police, help you ask for a proper process and get your timeline to the decision-maker first, and talk you out of counter-accusations or digging into anyone's private life.
 
 Ask in English and the skill answers in English; classical quotes stay in Chinese with a translation.
 
@@ -130,7 +127,7 @@ Tip: say **your level and reporting line, who the other party is, what written r
 
 | Item | Detail |
 |---|---|
-| Rules | **68** (the twelve "civil offensive" moves count as one), each with source, workplace translation and risk level; most include mitigation |
+| Rules | **68** (the twelve "civil offensive" moves count as one), each with its source, how it plays out at work and how risky it is; most include how to avoid the trap |
 | Themes | **10**: concealment, power, reading people & loyalty tests, persuasion, alliances, intelligence, anti-frame-up, flattery & sabotage detection, authority, exit |
 | Opponent playbook | **18** common office moves → classical name → first counter |
 | Worked examples | **6**: credit theft, being sidelined, blame-shifting, coordinated complaints, parachuted boss, insubordinate report |
@@ -141,9 +138,9 @@ Tip: say **your level and reporting line, who the other party is, what written r
 
 | | Quote collections | SurviveCorporate |
 |---|---|---|
-| Form | A pile of aphorisms | An Agent Skill: fixed workflow + output template |
-| Gives you | An attitude | Three strategies + three moves for today + wording |
-| Risk | Not mentioned | Exposure odds, consequences, deniability, exit trigger for every option |
+| Form | A pile of aphorisms | A well-read mentor who talks your situation through |
+| Gives you | An attitude | Three ways forward + three things to do today + words you can use as-is |
+| Risk | Not mentioned | For every option: where it can go wrong, how to guard against it, when to stop |
 | Sources | Often misattributed | Key quotes checked against Wikisource / standard translations; uncertain ones marked; forgeries flagged |
 | Limits | None | Legal moves only; dark texts used for recognition and defense |
 
@@ -172,7 +169,7 @@ Verification notes: [`references/sources.md`](./skills/survivecorporate/referenc
 
 ```text
 skills/survivecorporate/
-├── SKILL.md              # Core: scope, workflow, output template, opponent playbook, rule index
+├── SKILL.md              # Core: scope, reasoning steps, answer voice, opponent playbook, rule index
 └── references/
     ├── rules.md          # Appendix A: all 68 rules
     ├── history.md        # Appendix C: blowback cases and risk patterns
