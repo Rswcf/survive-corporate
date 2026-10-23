@@ -1,0 +1,12 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "survivecorporate",
+  "version": "0.1.0",
+  "description": "Workplace-politics strategy from Han Feizi, Guiguzi, the Six Secret Teachings, the Arthashastra and The Prince: hard but legal counters with sources and risk levels.",
+  "author": { "name": "Rswcf", "url": "https://github.com/Rswcf" },
+  "homepage": "https://github.com/Rswcf/survive-corporate",
+  "repository": "https://github.com/Rswcf/survive-corporate",
+  "license": "MIT",
+  "keywords": ["agent-skills", "office-politics", "han-feizi", "machiavelli", "career", "chinese-classics"],
+  "skills": ["./skills/survivecorporate"]
+}
