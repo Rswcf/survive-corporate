@@ -1,40 +1,53 @@
-name: 提交职场情形
-description: 描述一个职场政治情形，讨论如何用 SurviveCorporate 分析（合法范围内）
-title: "[情形] "
-labels: ["scenario"]
+name: 提交职场情形 / Workplace scenario
+description: 描述一个职场政治情形，讨论如何用 SurviveCorporate 分析（合法范围内）/ Share a situation to analyze with SurviveCorporate (legal moves only)
+title: "[情形 / Scenario] "
+labels: ["question"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issue 是公开的。** 请彻底匿名：不写真实姓名、公司、部门、可识别的项目名。
+        **Issues are public.** Remove real names, companies, teams and identifiable project names.
   - type: textarea
     id: situation
     attributes:
-      label: 情形描述
-      description: 匿名化。谁、做了什么、你的位置、你想达成什么。
-      placeholder: 例：周会上同事把我的方案当成他的成果汇报……
+      label: 情形描述 / Situation
+      description: 谁（用角色代称）、做了什么、你的位置与汇报线、已有哪些书面痕迹、你想达成什么。/ Who (by role), what happened, your position and reporting line, existing written records, the outcome you want.
+      placeholder: 例：周会上同事把我的方案当成他的成果汇报…… / e.g. In the weekly meeting a coworker presented my proposal as his own…
     validations:
       required: true
   - type: dropdown
     id: type
     attributes:
-      label: 情形类型
+      label: 情形类型 / Type
       options:
-        - 抢功
-        - 甩锅
-        - 被架空
-        - 集体投诉
-        - 空降领导
-        - 下属不服
-        - 向上管理
-        - 其他
+        - 抢功 / Credit theft
+        - 甩锅 / Blame-shifting
+        - 被架空 / Being sidelined
+        - 集体投诉 / Coordinated complaints
+        - 空降领导 / Parachuted boss
+        - 下属不服 / Insubordinate report
+        - 向上管理 / Managing up
+        - 其他 / Other
     validations:
       required: true
   - type: textarea
     id: constraints
     attributes:
-      label: 约束
-      description: 公司红线、国家/地区劳动法、你绝不能做的事
+      label: 约束 / Constraints
+      description: 公司红线、所在国家/地区、你绝不能做的事 / Company rules, country or region, things you will not do
+  - type: textarea
+    id: output
+    attributes:
+      label: Skill 输出（可选）/ Skill output (optional)
+      description: 如果你已经跑过 skill，贴上输出并说明哪里不对或不够用 / If you already ran the skill, paste the output and say what was wrong or missing
+      render: text
   - type: checkboxes
     id: scope
     attributes:
-      label: 范围确认
+      label: 范围确认 / Scope
       options:
-        - label: 我理解本项目只讨论合法强硬策略，不寻求诬告、伪造证据、骚扰或侵犯隐私的方法
+        - label: 我理解本项目只讨论合法强硬策略，不寻求诬告、伪造证据、骚扰或侵犯隐私的方法 / I understand this project only covers legal strategies, not false accusations, fabricated evidence, harassment or privacy intrusion
+          required: true
+        - label: 我已删除所有可识别个人或公司的信息 / I removed everything that identifies a person or company
           required: true

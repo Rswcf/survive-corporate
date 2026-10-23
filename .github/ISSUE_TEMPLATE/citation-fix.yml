@@ -1,0 +1,26 @@
+name: 原文勘误 / Citation fix
+description: 指出引文、篇名或出处错误 / Report a wrong quote, chapter or source
+title: "[勘误 / Citation] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: rule
+    attributes:
+      label: 条目编号 / Rule ID
+      description: 例 / e.g. A2.4、附录C 史例 3
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 现有文字 / Current text
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: 正确原文与出处 / Correct text and source
+      description: 附可核对的链接（维基文库、点校本、可靠英译）/ Include a verifiable link (Wikisource, a critical edition, a standard translation)
+    validations:
+      required: true

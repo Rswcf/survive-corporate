@@ -1,0 +1,15 @@
+{
+  "name": "survive-corporate",
+  "owner": { "name": "Rswcf" },
+  "metadata": {
+    "description": "SurviveCorporate: classical statecraft turned into a workplace-politics Agent Skill."
+  },
+  "plugins": [
+    {
+      "name": "survivecorporate",
+      "source": "./",
+      "description": "Workplace-politics strategy from Han Feizi, Guiguzi, the Six Secret Teachings, the Arthashastra and The Prince: hard but legal counters with sources and risk levels.",
+      "category": "productivity"
+    }
+  ]
+}

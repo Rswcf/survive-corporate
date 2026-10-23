@@ -1,0 +1,37 @@
+name: 安装或触发问题 / Install or trigger problem
+description: skill 装不上、不触发或输出格式异常 / The skill won't install, doesn't trigger, or produces broken output
+title: "[安装 / Install] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: client
+    attributes:
+      label: 客户端 / Client
+      options:
+        - Claude Code（插件市场 / plugin marketplace）
+        - Claude Code（~/.claude/skills）
+        - Claude.ai
+        - Cursor
+        - 其他 / Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本 / Version
+      description: 例 / e.g. `claude --version`、Cursor 版本号 / Cursor version
+  - type: textarea
+    id: steps
+    attributes:
+      label: 你做了什么 / What you did
+      description: 执行的命令或点击的步骤 / Commands run or steps clicked
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 实际结果 / What happened
+      description: 报错信息或截图 / Error messages or screenshots
+    validations:
+      required: true

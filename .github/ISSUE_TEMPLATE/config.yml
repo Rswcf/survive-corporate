@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 贡献指南 / Contributing guide
+    url: https://github.com/Rswcf/survive-corporate/blob/main/CONTRIBUTING.md
+    about: 提交新法则、案例或译文前请先阅读 / Read before proposing new rules, cases or translations

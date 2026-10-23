@@ -1,6 +1,8 @@
-# 贡献指南
+# 贡献指南 / Contributing
 
 感谢你愿意让 SurviveCorporate 更锋利、也更负责。
+
+*English summary: PRs for new rules (with a verifiable source), anonymized cases, citation fixes and translations are welcome. Never submit instructions for fabricated evidence, false accusations, harassment, privacy intrusion or discrimination, and never submit unverifiable "ancient quotes" or made-up metrics. Run `python3 scripts/check_skill.py` before opening a PR.*
 
 ## 可提交什么
 
@@ -11,17 +13,31 @@
 
 ## 不可提交什么
 
-- 伪造证据、诬告、骚扰恐吓、侵入账户/隐私、歧视的可操作教程
+- 伪造证据、诬告、骚扰恐吓、侵入账户/隐私、歧视、报复举报人的可操作教程
 - 毒药、武器、酷刑步骤
 - 无法核实出处的「古书金句」
 - 编造的 star 数、用户评价、效果数据
 
+## 文件在哪
+
+| 改什么 | 文件 |
+|---|---|
+| 法则全文 | `skills/survivecorporate/references/rules.md` |
+| 法则索引、对手手段谱系、流程、模板 | `skills/survivecorporate/SKILL.md` |
+| 示例 | `skills/survivecorporate/references/examples.md` |
+| 反噬史例 | `skills/survivecorporate/references/history.md` |
+| 核实说明 | `skills/survivecorporate/references/sources.md` |
+| 典籍研究 | `research/` |
+
+新增法则时，同时在 `SKILL.md` 的法则索引里加一行，并更新两份 README 中的法则数量。
+
 ## 提交流程
 
 1. Fork → 新建分支
-2. 改 `skills/survivecorporate/SKILL.md` 附录或 `research/`
-3. 打开 PR，说明：改了哪条、原文出处 URL、风险等级建议
-4. 用 [职场情形 Issue 模板](.github/ISSUE_TEMPLATE/workplace-scenario.yml) 也可先讨论
+2. 按上表修改对应文件
+3. 本地运行 `python3 scripts/check_skill.py`（检查 frontmatter、引用文件与法则数量是否一致）
+4. 打开 PR，说明：改了哪条、原文出处 URL、风险等级建议
+5. 也可以先用 [Issue 模板](https://github.com/Rswcf/survive-corporate/issues/new/choose) 讨论
 
 ## 原文规范
 
