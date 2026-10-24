@@ -2,11 +2,28 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "survivecorporate",
   "version": "0.1.0",
-  "description": "Workplace-politics strategy from Han Feizi, Guiguzi, the Six Secret Teachings, the Arthashastra and The Prince: hard but legal counters with sources and risk levels.",
-  "author": { "name": "Rswcf", "url": "https://github.com/Rswcf" },
+  "description": "A calm AI mentor for office politics: talks you through credit theft, blame-shifting, being sidelined and coordinated complaints with firm, legal moves drawn from Han Feizi, Guiguzi, the Arthashastra and The Prince, including where each move could backfire.",
+  "author": {
+    "name": "Yijie Ma (Rswcf)",
+    "url": "https://github.com/Rswcf"
+  },
   "homepage": "https://github.com/Rswcf/survive-corporate",
   "repository": "https://github.com/Rswcf/survive-corporate",
   "license": "MIT",
-  "keywords": ["agent-skills", "office-politics", "han-feizi", "machiavelli", "career", "chinese-classics"],
-  "skills": ["./skills/survivecorporate"]
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "office-politics",
+    "workplace",
+    "career-advice",
+    "career",
+    "han-feizi",
+    "machiavelli",
+    "chinese-classics"
+  ],
+  "skills": [
+    "./skills/survivecorporate"
+  ],
+  "icon": "./assets/icon.png"
 }

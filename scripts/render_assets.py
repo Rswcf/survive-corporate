@@ -90,7 +90,13 @@ def card(scene, lines, quote, source, lang="zh"):
     return page(1080, 1440, body, pad=90)
 
 
+def icon():
+    body = '<div class="seal" style="width:512px; height:512px; font-size:176px; border-radius:0;">職場<br>軍師</div>'
+    return page(512, 512, body, pad=0)
+
+
 ASSETS = {
+    "icon.png": (512, 512, icon()),
     "social-preview.png": (1280, 640, social_preview()),
     "cards/credit-theft.png": (1080, 1440, card(
         "周会上，同事把我做的方案当成他的成果汇报了。",
