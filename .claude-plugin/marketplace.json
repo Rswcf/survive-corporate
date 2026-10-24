@@ -1,15 +1,18 @@
 {
   "name": "survive-corporate",
-  "owner": { "name": "Rswcf", "url": "https://github.com/Rswcf" },
+  "owner": {
+    "name": "Yijie Ma (Rswcf)",
+    "url": "https://github.com/Rswcf"
+  },
   "metadata": {
-    "description": "SurviveCorporate: classical statecraft turned into a workplace-politics Agent Skill.",
+    "description": "SurviveCorporate: a calm AI mentor for office politics, built on classical statecraft.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "survivecorporate",
       "source": "./",
-      "description": "Workplace-politics strategy from Han Feizi, Guiguzi, the Six Secret Teachings, the Arthashastra and The Prince: hard but legal counters with sources and risk levels.",
+      "description": "A calm AI mentor for office politics: talks you through credit theft, blame-shifting, being sidelined and coordinated complaints with firm, legal moves drawn from Han Feizi, Guiguzi, the Arthashastra and The Prince, including where each move could backfire.",
       "category": "productivity"
     }
   ]
