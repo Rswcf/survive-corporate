@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you mention or build on SurviveCorporate, please cite it like this."
+title: "SurviveCorporate: an AI mentor skill for office politics, drawn from classical statecraft"
+type: software
+authors:
+  - family-names: Ma
+    given-names: Yijie
+    alias: Rswcf
+repository-code: "https://github.com/Rswcf/survive-corporate"
+url: "https://github.com/Rswcf/survive-corporate"
+license: MIT
+version: 0.1.0
+keywords:
+  - agent-skills
+  - claude-code
+  - office-politics
+  - workplace
+  - han-feizi
+  - machiavelli

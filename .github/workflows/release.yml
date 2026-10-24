@@ -1,0 +1,24 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Claude.ai upload zip
+        run: cd skills && zip -r ../survivecorporate.zip survivecorporate
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: survivecorporate.zip
+          generate_release_notes: true
+          body: |
+            **Claude.ai**: download `survivecorporate.zip` below and upload it under Customize → Skills.
+            **Claude Code**: `/plugin marketplace add Rswcf/survive-corporate`, then `/plugin install survivecorporate@survive-corporate`.
+            **Cursor / other tools**: see the [README](https://github.com/Rswcf/survive-corporate/blob/main/README.en.md#install).
