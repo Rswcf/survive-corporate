@@ -31,6 +31,29 @@
 
 新增法则时，同时在 `SKILL.md` 的法则索引里加一行，并更新两份 README 中的法则数量。
 
+### 仓库结构
+
+```text
+skills/survivecorporate/
+├── SKILL.md              # 核心：范围、思考流程、回答语气、对手手段谱系、法则索引
+└── references/
+    ├── rules.md          # 附录A：68 条法则全文
+    ├── history.md        # 附录C：反噬史例与风险规律
+    ├── examples.md       # 附录D：完整示例回答
+    └── sources.md        # 附录E：原文核实说明
+.claude-plugin/           # Claude Code 插件与市场清单
+.cursor-plugin/           # Cursor 插件与市场清单
+assets/                   # 社交预览图与分享卡片（由 scripts/render_assets.py 生成）
+research/                 # 典籍研究笔记
+docs/LAUNCH.md            # 推广草稿（不自动发布）
+```
+
+`SKILL.md` 只放每次都要用的内容，法则全文放在 `references/` 里按需加载，节省上下文。
+
+### 分享卡片
+
+`assets/` 里的图片由 `python3 scripts/render_assets.py` 生成（需要 Chrome/Chromium 与 Noto CJK 字体）。卡片上的文字必须逐字摘自 `references/examples.md`，不要另写「用户评价」或效果数据。
+
 ## 提交流程
 
 1. Fork → 新建分支
