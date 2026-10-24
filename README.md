@@ -51,8 +51,6 @@
 
 没有表格，没有打分，就像一位前辈坐下来跟你喝杯茶：先把局面说破，再讲三条路、每条路险在哪，最后告诉你今天先做什么。
 
-<!-- 录好真实使用的 GIF 或截图后放在这里，例如：<img src="./assets/demo.gif" alt="SurviveCorporate 实际对话演示" width="720"> -->
-
 <table>
 <tr>
 <td><img src="./assets/cards/sidelined.png" alt="被架空：头衔还在、实权在走" width="240"></td>
@@ -61,7 +59,7 @@
 </tr>
 </table>
 
-更多分享卡片在 [`assets/cards/`](./assets/cards/)，内容均摘自示例回答，可以直接转发。
+更多卡片在 [`assets/cards/`](./assets/cards/)，内容均摘自示例回答。
 
 ---
 
@@ -179,10 +177,6 @@ cp -r survive-corporate/skills/survivecorporate ~/.cursor/skills/
 ## 作者
 
 由 Yijie Ma（[@Rswcf](https://github.com/Rswcf)）制作。欢迎在 GitHub 上关注我，后续的新 skill 和更新都会发在这里。
-
-如果它帮你少踩了一个坑，点个 Star，或者把上面的卡片转给正被同事抢功的朋友。
-
----
 
 ## 免责声明
 

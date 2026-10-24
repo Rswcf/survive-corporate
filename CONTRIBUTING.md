@@ -45,7 +45,6 @@ skills/survivecorporate/
 .cursor-plugin/           # Cursor 插件与市场清单
 assets/                   # 社交预览图与分享卡片（由 scripts/render_assets.py 生成）
 research/                 # 典籍研究笔记
-docs/LAUNCH.md            # 推广草稿（不自动发布）
 ```
 
 `SKILL.md` 只放每次都要用的内容，法则全文放在 `references/` 里按需加载，节省上下文。

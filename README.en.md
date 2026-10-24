@@ -51,11 +51,9 @@ Then just describe what happened, for example "In the weekly meeting, a coworker
 
 No tables, no scores. It talks you through the situation the way a well-read senior colleague would over coffee: what's really going on, three ways forward, where each one can go wrong, and what to do today. Classical quotes stay in Chinese with an English translation.
 
-<!-- Add a real recording here once you have one, e.g. <img src="./assets/demo.gif" alt="SurviveCorporate in a real conversation" width="720"> -->
-
 <img src="./assets/cards/credit-theft-en.png" alt="Don't call him out in public. You'd win one meeting and gain someone who remembers it for years." width="300">
 
-More share cards (quoted from the example answers) are in [`assets/cards/`](./assets/cards/).
+More cards (quoted from the example answers) are in [`assets/cards/`](./assets/cards/).
 
 ---
 
@@ -173,10 +171,6 @@ Anonymize scenarios completely: no real names, companies or teams. Issues are pu
 ## Author
 
 Made by Yijie Ma ([@Rswcf](https://github.com/Rswcf)). Follow me on GitHub for new skills and updates.
-
-If this saved you from one political ambush, star the repo or send a card to a friend who's dealing with a credit thief.
-
----
 
 ## Disclaimer
 

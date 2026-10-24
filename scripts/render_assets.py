@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the social preview and share cards in assets/ with headless Chrome.
+"""Render the social preview and cards in assets/ with headless Chrome.
 
 Card text must be quoted verbatim from skills/survivecorporate/references/examples.md.
 Requires google-chrome (or chromium) and the Noto Serif/Sans CJK fonts.
